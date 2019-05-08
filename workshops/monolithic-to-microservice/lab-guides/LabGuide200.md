@@ -336,7 +336,7 @@ In this section you will clone a github repository that contains a Java REST App
 - From the directory you just cloned the repository into **Type**:
 
   ```
-  cd monolithic-to-microservice/lab-resources/docker
+  cd /home/opc/monolithic-to-microservice/workshops/monolithic-to-microservice/lab-resources/docker
   ```
 
 - Type **ls** and browse the baseline **AlphaProductsRestService.war** file, **dbconfig.properties**, **sqlnet.ora** and a **Dockerfile**:
@@ -351,10 +351,10 @@ In this section you will clone a github repository that contains a Java REST App
   ![](images/100/image01.png)
 
 
-- Copy the database wallet file you downloaded in Lab 100 (Recall that the file is in `/home/opc/Downloads`). You will scp this wallet file from the VNC Session VM (atp-js) to the `/home/opc/monolithic-to-microservice/lab-resources/docker` directory on the new OCI VM (docker):
+- Copy the database wallet file you downloaded in Lab 100 (Recall that the file is in `/home/opc/Downloads`). You will scp this wallet file from your Client VM to the `/home/opc/monolithic-to-microservice/workshops/monolithic-to-microservice/lab-resources/docker` directory on the new OCI VM (docker):
 
   ```
-  scp -i ./dockerkey /home/opc/Downloads/Wallet_orcl.zip opc@<YOUR-PUBLIC-IP>:/home/opc/monolithic-to-microservice/lab-resources/docker
+  scp -i ./dockerkey /home/opc/Downloads/Wallet_orcl.zip opc@<YOUR-PUBLIC-IP>:/home/opc/monolithic-to-microservice/workshops/monolithic-to-microservice/lab-resources/docker
   ```
 
   ![](images/200/46-1.1.PNG)
